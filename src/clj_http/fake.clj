@@ -82,7 +82,7 @@
 (defn url-encode
   "encodes string into valid URL string"
   [string]
-  (some-> string str (URLEncoder/encode "UTF-8") (.replace "+" "%20")))
+  (some-> string str (URLEncoder/encode "UTF-8")))
 
 (defn map->query
   "converts Clojure map with query-params into URL query-string.
